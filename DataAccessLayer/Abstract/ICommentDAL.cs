@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer.Abstract
 {
-    public interface IBlogDAL : IGenericDAL<Blog>
+    public interface ICommentDAL : IGenericDAL<Comment>
     {
     }
 }
