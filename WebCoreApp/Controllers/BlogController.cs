@@ -15,6 +15,7 @@ namespace WebCoreApp.Controllers
         }
         public IActionResult BlogReadAll(int id)
         {
+            ViewBag.i = id;
             var values = _manager.GetBlogById(id); 
             return View(values);
         }
