@@ -10,6 +10,8 @@ if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Home/Error");
 }
+app.UseStatusCodePages();
+app.UseStatusCodePagesWithReExecute("/ErrorPage/Error1", "?code = {0}");
 app.UseStaticFiles();
 
 app.UseRouting();
